@@ -5,21 +5,21 @@
 class Colflow < Formula
   desc "CLI for Dagster collection-flow pipelines: runs, assets, parquet inspection, asset scaffolding"
   homepage "https://github.com/CogappLabs/colflow-cli"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/CogappLabs/colflow-cli/releases/download/v0.2.1/colflow_0.2.1_darwin_amd64.tar.gz"
-      sha256 "8ae97064af351c9b6221d95c7e4690dd3c6d0cfc690b5fa472980328789ad920"
+      url "https://github.com/CogappLabs/colflow-cli/releases/download/v0.2.2/colflow_0.2.2_darwin_amd64.tar.gz"
+      sha256 "d921fb65c1f5c550da1f5aa85dcf030784399ba31a864ca1bdf1d1c820342fe9"
 
       define_method(:install) do
         bin.install "colflow"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/CogappLabs/colflow-cli/releases/download/v0.2.1/colflow_0.2.1_darwin_arm64.tar.gz"
-      sha256 "1868c1b2d2c540ca58f464dad5d97de73fd73eaf7f098b8d544e67417e933549"
+      url "https://github.com/CogappLabs/colflow-cli/releases/download/v0.2.2/colflow_0.2.2_darwin_arm64.tar.gz"
+      sha256 "91984b660859cd5b153528e94cb3c63824fb0f42c7e7055f85028575e9eccfe4"
 
       define_method(:install) do
         bin.install "colflow"
@@ -29,15 +29,15 @@ class Colflow < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CogappLabs/colflow-cli/releases/download/v0.2.1/colflow_0.2.1_linux_amd64.tar.gz"
-      sha256 "8295bd4dba6359329808f26952b8f5379957e4e6d4f5dfbdc17b867e2a2a9864"
+      url "https://github.com/CogappLabs/colflow-cli/releases/download/v0.2.2/colflow_0.2.2_linux_amd64.tar.gz"
+      sha256 "26b002a53b7b5d45a7c63fb7e3833f0250d155f7f70c75151ef7f1c26b491f3e"
       define_method(:install) do
         bin.install "colflow"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CogappLabs/colflow-cli/releases/download/v0.2.1/colflow_0.2.1_linux_arm64.tar.gz"
-      sha256 "cb3111fadea659e5ae86fe0d5b5bf9bf3a68eb9f069ced7bcd60cd9dbfa232c9"
+      url "https://github.com/CogappLabs/colflow-cli/releases/download/v0.2.2/colflow_0.2.2_linux_arm64.tar.gz"
+      sha256 "422bac3519d5e68e5e353600c9cde80c16d978677ee401e012d9704b40e2a6d5"
       define_method(:install) do
         bin.install "colflow"
       end
