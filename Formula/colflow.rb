@@ -1,26 +1,26 @@
 class Colflow < Formula
   desc "TUI for Dagster collection-flow pipelines"
   homepage "https://github.com/CogappLabs/colflow-cli-react"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/CogappLabs/colflow-cli-react/releases/download/v0.5.0/colflow-darwin-arm64.tar.gz"
-      sha256 "81adf7b686a5f7456c5946dff30adbd6257a7722f97c02f950ed41bb1b45893c"
+      url "https://github.com/CogappLabs/colflow-cli-react/releases/download/v0.6.0/colflow-darwin-arm64.tar.gz"
+      sha256 "9efd7fe86e257f90c2d16f2ccbbe3311b03527d5486d73b23eb98c999414ae91"
     else
-      url "https://github.com/CogappLabs/colflow-cli-react/releases/download/v0.5.0/colflow-darwin-amd64.tar.gz"
-      sha256 "4680e4dd53e6585dbd85f211124c664de44582a7c221583363b46fd2349fe2fb"
+      url "https://github.com/CogappLabs/colflow-cli-react/releases/download/v0.6.0/colflow-darwin-amd64.tar.gz"
+      sha256 "a8f42ffeef25bbd6c6acad4a066ddc61c4debf25773ef5edfe6fab5cf14008bd"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/CogappLabs/colflow-cli-react/releases/download/v0.5.0/colflow-linux-arm64.tar.gz"
-      sha256 "8c0448fc6631aab2cd680bf5a6f7fee30c101e6ea0d141251e2f454ebef11376"
+      url "https://github.com/CogappLabs/colflow-cli-react/releases/download/v0.6.0/colflow-linux-arm64.tar.gz"
+      sha256 "9f6df7f5b79b4cb88bc00fad5980712e5b8df982ccd3bffd942959fc76a0c132"
     else
-      url "https://github.com/CogappLabs/colflow-cli-react/releases/download/v0.5.0/colflow-linux-amd64.tar.gz"
-      sha256 "89810b20a6a6b6a246f4bd843e3c58ab945f5b797007d94b18460db48b88c2f3"
+      url "https://github.com/CogappLabs/colflow-cli-react/releases/download/v0.6.0/colflow-linux-amd64.tar.gz"
+      sha256 "b4e1263240d23c4bc327f4a7a9b8493c85a0fab5244e521b67bbd3e8d41f0fcb"
     end
   end
 
