@@ -5,21 +5,21 @@
 class LinearCli < Formula
   desc "CLI for Linear: issues, projects, comments, attachments, bulk pull to Parquet"
   homepage "https://github.com/CogappLabs/linear-cli"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/CogappLabs/linear-cli/releases/download/v0.1.0/linear-cli_0.1.0_darwin_amd64.tar.gz"
-      sha256 "b68685c1879373ecfc24c1d9e596ed0ace99c6f523493d91995000d78fae5b35"
+      url "https://github.com/CogappLabs/linear-cli/releases/download/v0.2.0/linear-cli_0.2.0_darwin_amd64.tar.gz"
+      sha256 "bc70a230724ad19981dc8ebe96ff708d8dfa5deab525459acdbc24577c0c8b30"
 
       define_method(:install) do
         bin.install "linear-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/CogappLabs/linear-cli/releases/download/v0.1.0/linear-cli_0.1.0_darwin_arm64.tar.gz"
-      sha256 "e2150ae8024648dc9adb4a6d74969d39aa01cfaae40a3372cd9c6b3d80a7be2b"
+      url "https://github.com/CogappLabs/linear-cli/releases/download/v0.2.0/linear-cli_0.2.0_darwin_arm64.tar.gz"
+      sha256 "84437a6422c8e06c32951d8068a01477edf785531bf49eef833563f039374cab"
 
       define_method(:install) do
         bin.install "linear-cli"
@@ -29,15 +29,15 @@ class LinearCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CogappLabs/linear-cli/releases/download/v0.1.0/linear-cli_0.1.0_linux_amd64.tar.gz"
-      sha256 "1f8bf10fc2152b25a6c25e3a2d6285436c573f0d0021ca6b762f099f7a611d6a"
+      url "https://github.com/CogappLabs/linear-cli/releases/download/v0.2.0/linear-cli_0.2.0_linux_amd64.tar.gz"
+      sha256 "8e9e654e92e26c5b4f1c083465c71621cde849bd7a9da22f04cff62a35f8668d"
       define_method(:install) do
         bin.install "linear-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/CogappLabs/linear-cli/releases/download/v0.1.0/linear-cli_0.1.0_linux_arm64.tar.gz"
-      sha256 "d8261494578be83b256a283df9bf8156ee68c18fe942749795f3d5268bcd80ad"
+      url "https://github.com/CogappLabs/linear-cli/releases/download/v0.2.0/linear-cli_0.2.0_linux_arm64.tar.gz"
+      sha256 "99ff926e6de4bc5086828002d40c4bfd315f792f4a05f6bded5202622af2a3fe"
       define_method(:install) do
         bin.install "linear-cli"
       end
